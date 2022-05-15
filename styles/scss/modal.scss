@@ -1,0 +1,107 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  min-height: 800px;
+  background: rgba(50, 50, 100, 0.7);
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+  .modal__container {
+    padding: 30px;
+    width: 650px;
+    height: 612px;
+
+    background: #F5F5FA;
+    box-shadow: 0 15px 80px rgba(40, 40, 86, 0.5);
+    border-radius: 12px;
+  }
+  .modal__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    .modal__title {
+      font-weight: 700;
+      font-size: 38px;
+      line-height: 46px;
+      background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+    .modal__close-btn {
+      cursor: pointer;
+      &:hover {
+        background: #E6E6F0;
+        border-radius: 8px;
+
+      }
+    }
+  }
+  .modal__form {
+    display: flex;
+    flex-direction: column;
+    .modal__form--name,
+    .modal__form--area,
+    .modal__form--number,
+    .modal__form--email {
+      padding: 15px;
+      height: 56px;
+      line-height: 26px;
+      color: #B3B3BA;
+      background: #FFFFFF;
+      border: 1px solid #FFFFFF;
+      border-radius: 8px;
+      outline: none;
+      margin-bottom: 15px;
+      &::placeholder{
+        font-family: 'Montserrat';
+        font-size: 16px;
+        line-height: 26px;
+        color: #B3B3BA;
+      }
+    }
+    .modal__form--area {
+      text-align: top;
+      height: 130px;
+      margin-bottom: 30px;
+      resize: none;
+    }
+    .modal__form--text {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #B3B3BA;
+      margin-bottom: 15px;
+    }
+    .modal__form--submit {
+      height: 56px;
+      background: #24A3FF;
+      box-shadow: 0 0 20px rgba(36, 163, 255, 0.5);
+      border-radius: 12px;
+      outline: none;
+      border: 0;
+
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      color: #FFFFFF;
+      cursor: pointer;
+      &:hover {
+        background: #F0145A;
+      }
+    }
+  }
+}
+
+.show {
+  display: flex;
+}

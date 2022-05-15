@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../fonts/Montserrat-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../fonts/Montserrat-Bold.ttf');
+    font-weight: 700;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+@import 'main.scss';
+@import 'modal.scss';
+@import 'adaptive.scss';

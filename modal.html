@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/css/reset.css">
+    <link rel="stylesheet" href="styles/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="modal">
+    <div class="modal__container">
+        <div class="modal__header">
+            <h2 class="modal__title">We would like to help you</h2>
+            <svg class="modal__close-btn" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2"/>
+                <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2"/>
+            </svg>
+        </div>
+        <form onsubmit="alert('отправлено!');return false" class="modal__form">
+            <input type="text" class="modal__form--name" placeholder="Name">
+            <textarea class="modal__form--area" placeholder="Message"></textarea>
+            <p class="modal__form--text">How to answer you?</p>
+            <input type="tel" class="modal__form--number" placeholder="Phone number">
+            <input type="email" class="modal__form--email" placeholder="Email">
+            <button type="submit" class="modal__form--submit">Send message</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
